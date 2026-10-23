@@ -1,6 +1,9 @@
 # Python-generated files
 __pycache__/
 *.py[oc]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
 build/
 dist/
 wheels/
@@ -8,3 +11,20 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Local databases and SQLite journal files
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.sqlite-journal
+
+# Local environment and secret files
+.env
+.env.*
+!.env.example
+
+# Logs and local operating-system files
+*.log
+.DS_Store
+Thumbs.db
